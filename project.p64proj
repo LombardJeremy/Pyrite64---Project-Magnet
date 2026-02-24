@@ -1,0 +1,9 @@
+{
+  "name": "MagnetProject",
+  "pathEmu": "ares",
+  "pathN64Inst": "",
+  "romName": "MagnetProject",
+  "sceneIdLastOpened": 1,
+  "sceneIdOnBoot": 1,
+  "sceneIdOnReset": 1
+}
