@@ -1,0 +1,30 @@
+{
+    "version": "0.2.1",
+    "tasks": [
+        {
+            "taskName": "Build ROM",
+            "appliesTo": "/",
+            "type": "launch",
+            "command": "${env.ComSpec}",
+            "args": ["/C", "make"],
+            "workingDirectory": "${workspaceRoot}",
+            "isBuildDefault": true
+        },
+        {
+            "taskName": "Clean",
+            "appliesTo": "/",
+            "type": "launch",
+            "command": "${env.ComSpec}",
+            "args": ["/C", "make clean"],
+            "workingDirectory": "${workspaceRoot}"
+        },
+        {
+            "taskName": "Build Pyrite",
+            "appliesTo": "/",
+            "type": "launch",
+            "command": "${env.ComSpec}",
+            "args": ["/C", "make p64"],
+            "workingDirectory": "${workspaceRoot}"
+        }
+    ]
+}

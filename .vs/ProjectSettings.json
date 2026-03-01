@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "N64",
+      "includePath": [
+        "${workspaceRoot}/src",
+        "${workspaceRoot}/src/user",
+        "${workspaceRoot}/engine/include",
+        "C:/msys64/pyrite64-sdk/include",
+        "C:/msys64/pyrite64-sdk/mips64-elf/include"
+      ],
+      "defines": [
+        "N64",
+        "__mips__",
+        "_MIPS_SZLONG=32",
+        "__N64__"
+      ],
+      "compilerPath": "C:/msys64/pyrite64-sdk/bin/mips64-elf-gcc.exe",
+      "cppStandard": "cpp20",
+      "intelliSenseMode": "gcc-x64"
+    }
+  ],
+  "CurrentProjectSetting": "No Configurations"
+}
