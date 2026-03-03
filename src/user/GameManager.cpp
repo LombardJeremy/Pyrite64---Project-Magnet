@@ -1,6 +1,29 @@
 #include "script/userScript.h"
 #include "scene/sceneManager.h"
 
+#define MAX_PLAYERS 4
+
+typedef enum {
+  GS_MENU,
+  GS_PLAYING,
+  GS_PAUSED,
+  GS_GAME_OVER,
+} GameState;
+
+typedef struct {
+  int port;
+  bool connected;
+  bool isActive;
+} Player;
+
+typedef struct {
+  GameState  state;
+  Player players[MAX_PLAYERS];
+  int player_count;
+} GameManager;
+
+
+
 namespace P64::Script::C10EC9787AF49529
 {
   P64_DATA(
@@ -11,6 +34,8 @@ namespace P64::Script::C10EC9787AF49529
     // - float
     // - AssetRef<sprite_t>
     // - ObjectRef
+
+
   );
 
   // The following functions are called by the engine at different points in the object's lifecycle.
@@ -27,6 +52,7 @@ namespace P64::Script::C10EC9787AF49529
 
   void update(Object& obj, Data *data, float deltaTime)
   {
+    gm->state = GS_MENU;
   }
 
   void draw(Object& obj, Data *data, float deltaTime)
