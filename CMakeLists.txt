@@ -20,12 +20,15 @@ include_directories(C:/msys64/pyrite64-tmp/tiny3d/src)
 include_directories(C:/msys64/pyrite64-tmp/libdragon/include)
 include_directories(${CMAKE_SOURCE_DIR}/engine/include)
 
+file(GLOB_RECURSE SOURCES "src/user/*.cpp")
+
 add_executable(magnet
         src/p64/assetTable.h
         src/p64/sceneTable.h
         #src/p64/CA20630FE536B54B.cpp
-        src/user/Feur.cpp
+        #src/user/*.cpp
         src/p64/scriptTable.cpp
         src/p64/sceneTable.cpp
         src/p64/globalScriptTable.cpp
+        ${SOURCES}
 )
