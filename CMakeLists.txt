@@ -16,8 +16,8 @@ set(CMAKE_CXX_COMPILER g++)
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_CXX_STANDARD 23)
 
-include_directories(C:/msys64/pyrite64-tmp/tiny3d/src)
-include_directories(C:/msys64/pyrite64-tmp/libdragon/include)
+include_directories(C:/msys64/home/hanna/tiny3d/src)
+include_directories(C:/msys64/home/hanna/libdragon/include)
 include_directories(${CMAKE_SOURCE_DIR}/engine/include)
 
 file(GLOB_RECURSE SOURCES "src/user/*.cpp")
