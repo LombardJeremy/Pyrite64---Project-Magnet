@@ -13,7 +13,13 @@ namespace P64::Script::C6D442CC0709BF30
     // - ObjectRef
 
     [[P64::Name("Speed")]] float speed = 10.0f;
+    [[P64::Name("Camera Object")]] ObjectRef cameraObj;
+
+    Comp::CollBody* collBody;
   );
+
+  // User functions
+  void MovePlayer(Data *data);
 
   // The following functions are called by the engine at different points in the object's lifecycle.
   // If you don't need a specific function you can remove it.
@@ -25,17 +31,12 @@ namespace P64::Script::C6D442CC0709BF30
       return;
     }
     // do initialization
+    data->collBody = obj.getComponent<Comp::CollBody>();
   }
 
   void update(Object& obj, Data *data, float deltaTime)
   {
-    Comp::CollBody* collBody = obj.getComponent<Comp::CollBody>();
-    Coll::BCS* bcs = &collBody->bcs;
-
-    const joypad_inputs_t inputs = joypad_get_inputs(JOYPAD_PORT_1);
-    fm_vec2_t moveInput{static_cast<float>(inputs.cstick_x), static_cast<float>(inputs.cstick_y)};
-
-    bcs->velocity = {moveInput.x * data->speed, bcs->velocity.y, moveInput.y * data->speed};
+    MovePlayer(data);
   }
 
   void draw(Object& obj, Data *data, float deltaTime)
@@ -48,5 +49,21 @@ namespace P64::Script::C6D442CC0709BF30
 
   void onCollision(Object& obj, Data *data, const Coll::CollEvent& event)
   {
+  }
+
+  void MovePlayer( Data *data)
+  {
+    if (!data->collBody) return;
+    if (!data->cameraObj) return;
+
+    //data->cameraObj->rot.
+
+    Coll::BCS* bcs = &data->collBody->bcs;
+
+    const joypad_inputs_t inputs = joypad_get_inputs(JOYPAD_PORT_1);
+    fm_vec2_t moveInput{static_cast<float>(inputs.cstick_x), static_cast<float>(inputs.cstick_y)};
+
+    bcs->velocity = {moveInput.x * data->speed, bcs->velocity.y, moveInput.y * data->speed};
+
   }
 }
