@@ -19,6 +19,7 @@ set(CMAKE_CXX_STANDARD 23)
 include_directories(C:/msys64/pyrite64-tmp/tiny3d/src)
 include_directories(C:/msys64/pyrite64-tmp/libdragon/include)
 include_directories(${CMAKE_SOURCE_DIR}/engine/include)
+include_directories(${CMAKE_SOURCE_DIR}/user/)
 
 file(GLOB_RECURSE SOURCES "src/user/*.cpp")
 
@@ -31,4 +32,6 @@ add_executable(magnet
         src/p64/sceneTable.cpp
         src/p64/globalScriptTable.cpp
         ${SOURCES}
+        src/user/Timer.cpp
+        src/user/Timer.h
 )
