@@ -1,9 +1,9 @@
 {
   "conf": {
     "clearColor": [
-      0.20161288976669312,
-      0.20161288976669312,
-      0.20161288976669312,
+      0.20000000298023224,
+      0.20000000298023224,
+      0.20000000298023224,
       1.0
     ],
     "doClearColor": true,
@@ -83,7 +83,7 @@
         "name": "PTX Opaque"
       }
     ],
-    "name": "Scene",
+    "name": "Test Player",
     "renderPipeline": 0
   },
   "graph": {
@@ -132,7 +132,7 @@
           0.9999811053276062
         ],
         "selectable": false,
-        "uuid": 2593312191,
+        "uuid": 1025203133,
         "uuidPrefab": 0
       },
       {
@@ -155,7 +155,7 @@
           }
         ],
         "enabled": true,
-        "id": 3,
+        "id": 2,
         "name": "Ambient Light",
         "pos": [
           -2.7578048706054688,
@@ -175,7 +175,7 @@
           1.0
         ],
         "selectable": true,
-        "uuid": 2808468358,
+        "uuid": 2726709857,
         "uuidPrefab": 0
       },
       {
@@ -198,7 +198,7 @@
           }
         ],
         "enabled": true,
-        "id": 5,
+        "id": 3,
         "name": "Dir. Light",
         "pos": [
           -57.58601760864258,
@@ -218,74 +218,7 @@
           1.0000035762786865
         ],
         "selectable": true,
-        "uuid": 1258577913,
-        "uuidPrefab": 0
-      },
-      {
-        "children": [],
-        "components": [
-          {
-            "data": {
-              "culling": false,
-              "layerIdx": 0,
-              "material": {
-                "depth": 0,
-                "env": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "fresnel": 0,
-                "fresnelColor": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "lighting": false,
-                "prim": [
-                  0.9435483813285828,
-                  0.7903199195861816,
-                  0.07989722490310669,
-                  0.9921568632125854
-                ],
-                "setDepth": false,
-                "setEnv": false,
-                "setFresnel": false,
-                "setLighting": false,
-                "setPrim": true
-              },
-              "meshFilter": "",
-              "model": 17660758381478844321
-            },
-            "id": 1,
-            "name": "Model (Static)",
-            "uuid": 1194680501142561258
-          }
-        ],
-        "enabled": true,
-        "id": 2,
-        "name": "Box",
-        "pos": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "propOverrides": {},
-        "rot": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ],
-        "selectable": true,
-        "uuid": 1407552857,
+        "uuid": 1726639589,
         "uuidPrefab": 0
       },
       {
@@ -324,7 +257,7 @@
                 "setPrim": true
               },
               "meshFilter": "",
-              "model": 17660758381478844321
+              "model": 13395967595700481838
             },
             "id": 1,
             "name": "Model (Static)",
@@ -333,9 +266,9 @@
           {
             "data": {
               "halfExtend": [
-                65.0,
-                65.0,
-                65.0
+                20.0,
+                40.0,
+                20.0
               ],
               "isFixed": false,
               "isTrigger": false,
@@ -343,7 +276,7 @@
               "maskWrite": 0,
               "offset": [
                 0.0,
-                0.0,
+                40.0,
                 0.0
               ],
               "type": 0
@@ -355,7 +288,7 @@
           {
             "data": {
               "args": {
-                "cameraObj": "2593312191",
+                "cameraObj": "1025203133",
                 "speed": " 10.0"
               },
               "script": 14327149758631231280
@@ -366,7 +299,7 @@
           }
         ],
         "enabled": true,
-        "id": 4,
+        "id": 5,
         "name": "Player",
         "pos": [
           235.46900939941406,
@@ -381,12 +314,12 @@
           1.0
         ],
         "scale": [
-          1.0,
-          1.0,
-          1.0
+          3.0,
+          3.0,
+          3.0
         ],
         "selectable": true,
-        "uuid": 1830657065,
+        "uuid": 1710188221,
         "uuidPrefab": 0
       }
     ],
