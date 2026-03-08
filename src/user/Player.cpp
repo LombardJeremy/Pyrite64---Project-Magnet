@@ -12,6 +12,7 @@ namespace P64::Script::C6D442CC0709BF30
     // - AssetRef<sprite_t>
     // - ObjectRef
 
+    [[P64::Name("LocalMultiplayerId")]] int localMultiplayerId = 0;
     [[P64::Name("Speed")]] float speed = 10.0f;
 
     Comp::CollBody* collBody;
@@ -58,7 +59,27 @@ namespace P64::Script::C6D442CC0709BF30
 
     Coll::BCS* bcs = &data->collBody->bcs;
 
-    const joypad_inputs_t inputs = joypad_get_inputs(JOYPAD_PORT_1);
+    joypad_inputs_t inputs = {};
+
+    switch (data->localMultiplayerId)
+    {
+      case 0:
+        {
+          inputs = joypad_get_inputs(JOYPAD_PORT_1);
+          break;
+        }
+      case 1:
+        {
+          inputs = joypad_get_inputs(JOYPAD_PORT_2);
+          break;
+        }
+      default:
+        {
+          inputs = joypad_get_inputs(JOYPAD_PORT_1);
+          break;
+        }
+    }
+
     fm_vec2_t moveInput{static_cast<float>(inputs.cstick_x), static_cast<float>(inputs.cstick_y)};
 
     bcs->velocity = {moveInput.x * data->speed, bcs->velocity.y, moveInput.y * data->speed};
