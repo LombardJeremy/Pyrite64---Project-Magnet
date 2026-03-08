@@ -13,7 +13,6 @@ namespace P64::Script::C6D442CC0709BF30
     // - ObjectRef
 
     [[P64::Name("Speed")]] float speed = 10.0f;
-    [[P64::Name("Camera Object")]] ObjectRef cameraObj;
 
     Comp::CollBody* collBody;
   );
@@ -54,7 +53,6 @@ namespace P64::Script::C6D442CC0709BF30
   void MovePlayer( Data *data)
   {
     if (!data->collBody) return;
-    if (!data->cameraObj) return;
 
     //data->cameraObj->rot.
 
