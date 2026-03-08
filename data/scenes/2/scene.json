@@ -223,91 +223,20 @@
       },
       {
         "children": [],
-        "components": [
-          {
-            "data": {
-              "culling": false,
-              "layerIdx": 0,
-              "material": {
-                "depth": 1,
-                "env": [
-                  0.12903225421905518,
-                  0.12903225421905518,
-                  0.12903225421905518,
-                  0.0
-                ],
-                "fresnel": 0,
-                "fresnelColor": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "lighting": false,
-                "prim": [
-                  1.0,
-                  1.0,
-                  1.0,
-                  0.0
-                ],
-                "setDepth": false,
-                "setEnv": false,
-                "setFresnel": false,
-                "setLighting": false,
-                "setPrim": true
-              },
-              "meshFilter": "",
-              "model": 13395967595700481838
-            },
-            "id": 1,
-            "name": "Model (Static)",
-            "uuid": 1488838448478512927
-          },
-          {
-            "data": {
-              "halfExtend": [
-                20.0,
-                40.0,
-                20.0
-              ],
-              "isFixed": false,
-              "isTrigger": false,
-              "maskRead": 0,
-              "maskWrite": 0,
-              "offset": [
-                0.0,
-                40.0,
-                0.0
-              ],
-              "type": 0
-            },
-            "id": 5,
-            "name": "Collision-Body",
-            "uuid": 1983570198800382593
-          },
-          {
-            "data": {
-              "args": {
-                "cameraObj": "1025203133",
-                "localMultiplayerId": " 0",
-                "speed": " 10.0"
-              },
-              "script": 14327149758631231280
-            },
-            "id": 0,
-            "name": "Code",
-            "uuid": 13910691620659588978
-          }
-        ],
+        "components": [],
         "enabled": true,
-        "id": 5,
+        "id": 4,
         "name": "PlayerOne",
         "pos": [
           -143.8687744140625,
           0.0,
           0.0
         ],
-        "propOverrides": {},
+        "propOverrides": {
+          "11272843812465326562": "1:3.000000,3.000000,3.000000",
+          "13911321452997764027": "1:-143.868774,0.000000,0.000000",
+          "9467563534403475754": "0:0.000000,0.000000,0.000000,1.000000"
+        },
         "rot": [
           0.0,
           0.0,
@@ -320,96 +249,26 @@
           3.0
         ],
         "selectable": true,
-        "uuid": 1710188221,
-        "uuidPrefab": 0
+        "uuid": 3844610465,
+        "uuidPrefab": 1171279585
       },
       {
         "children": [],
-        "components": [
-          {
-            "data": {
-              "culling": false,
-              "layerIdx": 0,
-              "material": {
-                "depth": 1,
-                "env": [
-                  0.12903225421905518,
-                  0.12903225421905518,
-                  0.12903225421905518,
-                  0.0
-                ],
-                "fresnel": 0,
-                "fresnelColor": [
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "lighting": false,
-                "prim": [
-                  1.0,
-                  1.0,
-                  1.0,
-                  0.0
-                ],
-                "setDepth": false,
-                "setEnv": false,
-                "setFresnel": false,
-                "setLighting": false,
-                "setPrim": true
-              },
-              "meshFilter": "",
-              "model": 13395967595700481838
-            },
-            "id": 1,
-            "name": "Model (Static)",
-            "uuid": 1488838448478512927
-          },
-          {
-            "data": {
-              "halfExtend": [
-                20.0,
-                40.0,
-                20.0
-              ],
-              "isFixed": false,
-              "isTrigger": false,
-              "maskRead": 0,
-              "maskWrite": 0,
-              "offset": [
-                0.0,
-                40.0,
-                0.0
-              ],
-              "type": 0
-            },
-            "id": 5,
-            "name": "Collision-Body",
-            "uuid": 1983570198800382593
-          },
-          {
-            "data": {
-              "args": {
-                "cameraObj": "1025203133",
-                "localMultiplayerId": "1",
-                "speed": " 10.0"
-              },
-              "script": 14327149758631231280
-            },
-            "id": 0,
-            "name": "Code",
-            "uuid": 13910691620659588978
-          }
-        ],
+        "components": [],
         "enabled": true,
-        "id": 4,
+        "id": 5,
         "name": "PlayerTwo",
         "pos": [
-          114.29100799560547,
+          -143.8687744140625,
           0.0,
           0.0
         ],
-        "propOverrides": {},
+        "propOverrides": {
+          "11272843812465326562": "1:3.000000,3.000000,3.000000",
+          "13911321452997764027": "1:142.463058,0.000000,0.000000",
+          "9194025326158700629": "9:1",
+          "9467563534403475754": "0:0.000000,0.000000,0.000000,1.000000"
+        },
         "rot": [
           0.0,
           0.0,
@@ -422,8 +281,8 @@
           3.0
         ],
         "selectable": true,
-        "uuid": 1295613480,
-        "uuidPrefab": 0
+        "uuid": 3299549674,
+        "uuidPrefab": 1171279585
       }
     ],
     "components": [],

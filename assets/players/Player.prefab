@@ -1,0 +1,105 @@
+{
+  "obj": {
+    "children": [],
+    "components": [
+      {
+        "data": {
+          "culling": false,
+          "layerIdx": 0,
+          "material": {
+            "depth": 1,
+            "env": [
+              0.12903225421905518,
+              0.12903225421905518,
+              0.12903225421905518,
+              0.0
+            ],
+            "fresnel": 0,
+            "fresnelColor": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "lighting": false,
+            "prim": [
+              1.0,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "setDepth": false,
+            "setEnv": false,
+            "setFresnel": false,
+            "setLighting": false,
+            "setPrim": true
+          },
+          "meshFilter": "",
+          "model": 13395967595700481838
+        },
+        "id": 1,
+        "name": "Model (Static)",
+        "uuid": 1488838448478512927
+      },
+      {
+        "data": {
+          "halfExtend": [
+            20.0,
+            40.0,
+            20.0
+          ],
+          "isFixed": false,
+          "isTrigger": false,
+          "maskRead": 0,
+          "maskWrite": 0,
+          "offset": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "type": 0
+        },
+        "id": 5,
+        "name": "Collision-Body",
+        "uuid": 1983570198800382593
+      },
+      {
+        "data": {
+          "args": {
+            "cameraObj": "1025203133",
+            "localMultiplayerId": " 0",
+            "speed": " 10.0"
+          },
+          "script": 14327149758631231280
+        },
+        "id": 0,
+        "name": "Code",
+        "uuid": 13910691620659588978
+      }
+    ],
+    "enabled": true,
+    "id": 5,
+    "name": "PlayerOne",
+    "pos": [
+      -143.8687744140625,
+      0.0,
+      0.0
+    ],
+    "propOverrides": {},
+    "rot": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "selectable": true,
+    "uuid": 1710188221,
+    "uuidPrefab": 0
+  },
+  "uuid": 1171279585
+}
